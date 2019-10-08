@@ -1,0 +1,11 @@
+﻿
+<div class="jumbotron">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <h1>Hello @User.Identity.Name!</h1>
+    }
+    else
+    {
+        <h1>Hello World!</h1>
+    }
+</div>
